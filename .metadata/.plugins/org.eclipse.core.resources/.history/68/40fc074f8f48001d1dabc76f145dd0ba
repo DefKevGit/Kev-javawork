@@ -1,0 +1,10 @@
+package eNum;
+
+public class test 
+{
+	public static void main(String[] args) 
+	{
+		Colours myColour=Colours.RED;
+		
+	}
+}

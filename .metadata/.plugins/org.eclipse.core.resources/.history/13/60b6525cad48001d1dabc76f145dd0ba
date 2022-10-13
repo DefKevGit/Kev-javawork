@@ -1,0 +1,8 @@
+20221010 16:07:03 INFO  [main] apacheLogger.Test Test.java14 - This is informational log.
+20221010 16:07:03 WARN  [main] apacheLogger.Test Test.java15 - This is a warning
+20221010 16:07:03 FATAL [main] apacheLogger.Test Test.java16 - This is fatal, must be solved
+20221010 16:07:03 ERROR [main] apacheLogger.Test Test.java23 - / by zero
+20221010 16:07:03 ERROR [main] apacheLogger.Test Test.java24 - Catching
+java.lang.ArithmeticException: / by zero
+	at apacheLogger.Test.main(Test.java:19) [classes/:?]
+20221010 16:07:03 DEBUG [main] apacheLogger.Test Test.java25 - / by zero

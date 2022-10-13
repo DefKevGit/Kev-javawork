@@ -1,0 +1,13 @@
+package fileIO;
+
+import java.io.FileWriter;
+import java.io.Writer;
+
+public class WriteFileExample 
+{
+	public static void main(String[] args) 
+	{
+		Writer w=new FileWriter("D:\\qafiles\\Kev.txt");
+		
+	}
+}

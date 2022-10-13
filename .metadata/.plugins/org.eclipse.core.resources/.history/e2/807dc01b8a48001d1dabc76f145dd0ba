@@ -1,0 +1,11 @@
+package methodReference;
+
+public class Test 
+{
+	public static void main(String[] args) 
+	{
+		Notable nt=new School();
+		Notable nt=sch::noteSomething;
+		nt.note(null);
+	}
+}

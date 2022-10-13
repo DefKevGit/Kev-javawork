@@ -1,0 +1,19 @@
+package staticx;
+
+public class Test {
+	public static void main(String[] args) {
+		Sample obj1=new Sample();
+		obj1.name="Angel";
+		obj1.SSN=2034567;
+		
+		Sample obj2=new Sample();
+		obj2.name="Kev";
+		obj2.SSN=4561231;
+		
+		System.out.println(obj1.nameOfOrg);
+		System.out.println(Sample.nameOfOrg);
+		Sample.nameOfOrg="Oracle";
+		System.out.println(Sample.nameOfOrg);
+	}
+
+}

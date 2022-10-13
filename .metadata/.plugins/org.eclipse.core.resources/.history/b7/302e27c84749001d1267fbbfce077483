@@ -1,0 +1,5 @@
+package errorLogger;
+
+public class ErrorLogger {
+
+}

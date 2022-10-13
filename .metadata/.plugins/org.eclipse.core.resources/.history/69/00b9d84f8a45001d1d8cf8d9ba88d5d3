@@ -1,0 +1,50 @@
+package mapExample;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import collection.Product;
+
+public class MapTest 
+{
+	public static void main(String[] args) 
+	{
+		Map<Integer, String> myMap=new HashMap();
+		myMap.put(101, "London");
+		myMap.put(102, "New York");
+		myMap.put(103, "shanghai");
+		myMap.put(104, "Sidney");
+		myMap.put(105, "Istanbul");
+		myMap.put(106, "Istanbul");
+		
+		for(Map.Entry m:myMap.entrySet())
+		{
+			System.out.println(m.getKey()+"----"+m.getValue());
+			
+		}
+		
+		List<Product> list1=new ArrayList<>();
+		Product prod1=new Product("bluetooth",50,10,"Boat");
+		
+		Product prod2=new Product("TV",1000,5,"Apple");
+		
+		Product prod3=new Product("Camera",500,8,"Sony");
+	
+		Product prod4=new Product("Tripod",70,15,"Digitech");
+		
+		list1.add(prod1);
+		list1.add(prod2);
+		list1.add(prod3);
+		list1.add(prod4);
+		
+		for(Map.Entry m:myMap.entrySet())
+		{
+			System.out.println(m.getKey()+"----"+m.getValue());
+		}	
+		
+		
+		
+	}
+}

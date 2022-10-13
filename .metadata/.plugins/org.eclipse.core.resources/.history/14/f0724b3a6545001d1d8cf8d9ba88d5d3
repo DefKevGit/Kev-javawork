@@ -1,0 +1,27 @@
+package exception;
+
+public class Sample {
+
+	public static void main(String[] args) 
+	{
+		try
+		{	int x=10;
+			int y=0;
+			int z=x/y;
+			int[] nums=new int[5];
+			nums[5]=200;
+		}
+		catch (ArithmeticException e)
+		{
+			System.out.println(e.getMessage());
+			System.out.println("Something is very wrong!! (divide by 0)");
+		}
+		catch (ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println(e.getMessage());
+			System.out.println("Something is very wrong!! (array)");
+		}
+		
+	}
+
+}

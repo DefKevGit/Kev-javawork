@@ -1,0 +1,10 @@
+package methodReference;
+
+public class School 
+{
+	public void note(String obj)
+	{
+		System.out.println("Make a note of "+obj);
+	}
+	
+}

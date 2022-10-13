@@ -1,0 +1,21 @@
+package javaLogger;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class Test 
+{
+	public static void main(String[] args) 
+	{
+		LogException logObj=new LogException();
+		Logger log=Logger.getLogger(" ");
+		try
+		{
+			logObj.divByZero();
+		}catch(Exception e)
+		{
+			log.log(Level.WARNING, "Cannot divide by zero.");
+		}
+		
+	}
+}
