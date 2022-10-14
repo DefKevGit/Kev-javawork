@@ -1,5 +1,0 @@
-package eNum;
-
-public enum MsgStatus {
-
-}
