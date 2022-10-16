@@ -19,17 +19,21 @@ public class MyFirstSpringApplication
 		//SpringApplication.run(MyFirstSpringApplication.class, args);
 		ApplicationContext context = SpringApplication.run(MyFirstSpringApplication.class, args);
 
+	    Object byName = context.getBean("greeting");
+		String byType = context.getBean(String.class);
 	    String byBoth = context.getBean("greeting", String.class);
-        System.out.print("\n"+byBoth);
+	    System.out.println(byName);
+        System.out.println(byType);
+	    System.out.println(byBoth);
 	    
         LocalTime byBoth2 = context.getBean("timenow", LocalTime.class);
-	    System.out.print(" The time is "+byBoth2);
+        System.out.println(" The time is "+byBoth2);
 
 	    
         Person byBoth1 = context.getBean("showPerson", Person.class);
-	    System.out.print(" and you are a "+byBoth1+".");
+	    System.out.println(" and you are a "+byBoth1+".");
 	    
 	    Book byAll = context.getBean("showBook", Book.class);
-	    System.out.print("\n"+byAll);
+	    System.out.println(byAll);
     }
 }
