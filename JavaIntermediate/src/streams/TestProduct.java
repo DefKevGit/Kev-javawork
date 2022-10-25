@@ -27,26 +27,26 @@ public class TestProduct
 		System.out.println(prodNames);
 		
 		
-		Set<String> setNames=prodList.stream()
-			.filter(kev->kev.deliveryCharges==0.0f)
-			.map(hasan->hasan.name)
-			.collect(Collectors.toSet());
-		System.out.println(setNames);
-		
-		Map<Integer, String> prodMap=prodList.stream().collect(Collectors.toMap(x->x.prodId, y->y.brand));
-		System.out.println(prodMap);
-		
-		System.out.println("\nUNSORTED LIST");
-		prodList.stream()
-		.map(j->j.name)
-		.forEach(m->System.out.println(m));
-		
-		System.out.println("\nSORTED LIST");
-		prodList.stream()
-		.map(p->p.name)
-		.sorted()
-		.forEach(f->System.out.println(f));
-		
+//		Set<String> setNames=prodList.stream()
+//			.filter(kev->kev.deliveryCharges==0.0f)
+//			.map(hasan->hasan.name)
+//			.collect(Collectors.toSet());
+//		System.out.println(setNames);
+//		
+//		Map<Integer, String> prodMap=prodList.stream().collect(Collectors.toMap(x->x.prodId, y->y.brand));
+//		System.out.println(prodMap);
+//		
+//		System.out.println("\nUNSORTED LIST");
+//		prodList.stream()
+//		.map(j->j.name)
+//		.forEach(m->System.out.println(m));
+//		
+//		System.out.println("\nSORTED LIST");
+//		prodList.stream()
+//		.map(p->p.name)
+//		.sorted()
+//		.forEach(f->System.out.println(f));
+//		
 		
 	}
 	

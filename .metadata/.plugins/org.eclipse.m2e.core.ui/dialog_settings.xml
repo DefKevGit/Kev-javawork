@@ -50,14 +50,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.QA"/>
-			<item value="QA"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="LoggerApplication"/>
-			<item value="test"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
